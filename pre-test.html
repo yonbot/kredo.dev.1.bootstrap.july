@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pre-Text</title>
+  <style>
+    .required {
+      color: red;
+    }
+
+    .checkbox-container {
+        display: block;
+    }
+
+    .input-container {
+        display: block;
+    }
+
+    .radio-container {
+        display: block;
+    }
+
+    table td {
+      border: transparent 5px solid;
+    }
+
+    .col1 {
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <form action="#" method="POST">
+    <table>
+      <tbody>
+        <tr>
+          <td class="col1">
+            <label for="fname">Full Name <span class="required">*</span></label>
+          </td>
+          <td>
+            <input type="text" name="fname" placeholder="First Name" required>
+            <input type="text" name="lname" placeholder="Last Name" required>
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">
+            <label for="university">University <span class="required">*</span></label>
+          </td>
+          <td>
+            <select name="university" required>
+              <option value="" selected>Select University</option>
+              <option value="tokyo">Tokyo University</option>
+              <option value="kyoto">Kyoto University</option>
+              <option value="keio">Keio University</option>
+              <option value="waseda">Waseda University</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">
+            <label for="specify_university">If Other - Please Specify</label>
+          </td>
+          <td>
+            <input type="text" name="specify_university">
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">
+            <label for="faculty">Faculty <span class="required">*</span></label>
+          </td>
+          <td>
+            <select name="faculty" required>
+              <option value="" selected>Select Faculty</option>
+              <option value="letters">School of Letters</option>
+              <option value="law">School of Law</option>
+              <option value="economics">School of Economics</option>
+              <option value="commerce">School of Commerce</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">
+            <label for="specify_faculty">If Other - Please Specify</label>
+          </td>
+          <td>
+            <input type="text" name="specify_faculty">
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">
+            <label for="year">Academic year of PhD <span class="required">*</span></label>
+          </td>
+          <td>
+            <select name="year" required>
+              <option value="" selected>Select Year</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">
+            <label for="theme">Where would you like to work?</label>
+          </td>
+          <td>
+            <div class="checkbox-container">
+              <input type="checkbox" name="academia">
+              <label for="academia">Academia</label>
+            </div>
+
+            <div class="checkbox-container">
+              <input type="checkbox" name="industry">
+              <label for="academia">Industry</label>
+            </div>
+
+            <div class="checkbox-container">
+              <input type="checkbox" name="consultancy">
+              <label for="consultancy">Consultancy</label>
+            </div>
+
+            <div class="checkbox-container">
+              <input type="checkbox" name="finance">
+              <label for="finance">Finance</label>
+            </div>
+
+            <div class="checkbox-container">
+              <input type="checkbox" name="policy">
+              <label for="policy">Policy / Government / NGO</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">
+            <label for="email">E-mail <span class="required">*</span></label>
+          </td>
+          <td>
+            <div class="input-container">
+              <input type="email" name="email" placeholder="ex:myname@example.com" required>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" placeholder="Confirm Email" required>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="col1">
+            <label for="newsletter">Would you like to sign up to our newsletter?</label>
+          </td>
+          <td>
+            <div class="radio-container">
+              <input type="radio" name="newsletter" value="yes">
+              <label for="yes">Yes</label>
+            </div>
+            <div class="radio-container">
+              <input type="radio" name="newsletter" value="already">
+              <label for="already">No, I have already signed up</label>
+            </div>
+            <div class="radio-container">
+              <input type="radio" name="newsletter" value="no">
+              <label for="no">No</label>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="col1"></td>
+          <td><input type="submit" value="Submit"></td>
+        </tr>
+      </tbody>
+    </table>
+  </form> 
+
+</body>
+</html>

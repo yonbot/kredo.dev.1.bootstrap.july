@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Forms</title>
+</head>
+
+<body>
+
+  <!-- autocomplete-off -->
+  <div class="container">
+    <form action="#" method="post" 
+      class="w-50 mx-auto border p-3 mt-5 rounded"
+      autocomplete="off">
+      <!-- PHPのnameの名称規約は_である 
+           idには-を使う
+           form-controlは横幅に広がる
+      -->
+      <label for="first-name" 
+        class="form-label fw-bold">First Name</label>
+      <input type="text" name="first_name"
+        id="first-name" class="form-control">
+
+      <label for="last-name" 
+        class="form-label fw-bold">Last Name</label>
+      <input type="text" name="last_name"
+        id="last-name" class="form-control form-control-sm">
+
+      <!-- form-select, hidden -->
+      <label for="field" class="form-label fw-bold">Career Field</label>
+      <select name="field" id="field" class="form-select">
+        <option value="" hidden>Select A Career Field</option>
+        <option value="Architectue and Engineering">Architectue and Engineering</option>
+        <option value="Arts and Entertainment">Arts and Entertainment</option>
+        <option value="Business">Business</option>
+        <option value="Health and Medicine">Health and Medicine</option>
+      </select>
+
+      <!-- form-check, form-check-input, form-check-label -->
+      <div class="form-check-inline">
+        <input type="checkbox" name="agree" id="agree" 
+          class="form-check-input">
+        <label for="agree" class="form-check-label">
+          I agree with the terms and conditions.
+        </label>
+        <input type="checkbox" name="agree" id="no" 
+        class="form-check-input">
+        <label for="no" class="form-check-label">
+          No.
+        </label>
+      </div>
+
+      <!-- form-check-inline, radio -->
+      <div class="form-check-inline">
+        <input type="radio" name="size" id="sm" 
+          value="sm"
+          class="form-check-input">
+        <label for="sm" class="form-check-label">
+          Small
+        </label>
+        <input type="radio" name="size" id="md" 
+          value="md"
+          class="form-check-input">
+        <label for="md" class="form-check-label">
+          Medium
+        </label>
+        <input type="radio" name="size" id="lg" 
+          value="lg"
+          class="form-check-input">
+        <label for="lg" class="form-check-label">
+          Large
+        </label>
+      </div>
+
+      <br>
+
+      <!-- area-describedby -->
+      <label for="user-password" 
+        class="form-label fw-bold">Password</label>
+      <input type="password" name="password"
+        id="user-password" class="form-control"
+        maxlength="8" area-describedby="password-info">
+      <div class="form-text" id="password-info">
+        Your password must be 8 characters long.
+      </div>
+
+      <br>
+
+      <!-- Buttons -->
+      <button class="btn btn-primary">Submit</button>
+      <button class="btn btn-success">Submit</button>
+      <button class="btn btn-warning">Submit</button>
+      <button class="btn btn-danger">Submit</button>
+      <button class="btn btn-info">Submit</button>
+      <button class="btn btn-secondary">Submit</button>
+      <button class="btn btn-dark">Submit</button>
+      <br>
+      <input type="submit" value="Save" class="btn btn-primary">
+      <input type="submit" value="Save" class="btn btn-success">
+      <input type="submit" value="Save" class="btn btn-warning">
+      <input type="submit" value="Save" class="btn btn-danger">
+      <input type="submit" value="Save" class="btn btn-info">
+      <input type="submit" value="Save" class="btn btn-secondary">
+      <input type="submit" value="Save" class="btn btn-dark">
+      <br>
+      <a href="#" class="btn btn-primary">Upload</a>
+      <a href="#" class="btn btn-success">Upload</a>
+      <a href="#" class="btn btn-warning">Upload</a>
+      <a href="#" class="btn btn-danger">Upload</a>
+      <a href="#" class="btn btn-info">Upload</a>
+      <a href="#" class="btn btn-secondary">Upload</a>
+      <a href="#" class="btn btn-dark">Upload</a>
+      <br>
+
+      <!-- Size of the Buttons-->
+      <button class="btn btn-primary btn-lg">Submit</button>
+      <button class="btn btn-primary">Submit</button>
+      <button class="btn btn-primary btn-sm">Submit</button>
+    </form>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

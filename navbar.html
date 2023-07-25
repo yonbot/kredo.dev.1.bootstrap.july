@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Navbar</title>
+</head>
+<body>
+
+  <!-- navbar, 992px, 
+    navbar-dark:font-color is white 
+    navbar-light:font-color is black
+  -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-2">
+    <!-- navbar-brand: company, product, project name -->
+    <!-- 縮小しても隠れない, ロゴ部分 -->
+    <a href="#" class="navbar-brand">
+      <i class="fa-brands fa-envira"></i>
+    </a>
+
+    <!-- navbar-toggler: 縮小した時にトグルボタンになる部分 -->
+    <!-- 決まり文句 -->
+    <button class="navbar-toggler" type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbar-content">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- data-bs-targetとidで紐づけする -->
+    <!-- 決まり文句, ulをラップする -->
+    <div class="collapse navbar-collapse" id="navbar-content">
+      <!-- navbar-nav, nav-item, nav-link -->
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Features</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" disabled>Disabled</a>
+        </li>
+      </ul>
+      <!-- ms-auto を入れる事で右側に寄る -->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

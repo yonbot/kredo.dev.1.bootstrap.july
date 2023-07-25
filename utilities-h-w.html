@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Utilities-h-w</title>
+</head>
+<body>
+  <!-- Rounded Utilities -->
+  <div class="container">
+    <div class="ms-2 mt-2 border border-primary rounded" style="width: 100px; height: 100px;">data1</div>
+    <div class="ms-2 mt-2 border border-primary rounded-top" style="width: 100px; height: 100px;">data1</div>
+    <div class="ms-2 mt-2 border border-primary rounded-end" style="width: 100px; height: 100px;">data1</div>
+    <div class="ms-2 mt-2 border border-primary rounded-bottom" style="width: 100px; height: 100px;">data1</div>
+    <div class="ms-2 mt-2 border border-primary rounded-start" style="width: 100px; height: 100px;">data1</div>
+
+    <div class="ms-2 mt-2 border border-primary rounded-circle" style="width: 175px; height: 100px;">rounded-circle</div><!-- oval circle width is bigger than height -->
+    <div class="ms-2 mt-2 border border-primary rounded-1" style="width: 175px; height: 100px;">rounded-1</div>
+    <div class="ms-2 mt-2 border border-primary rounded-2" style="width: 175px; height: 100px;">rounded-2</div>
+    <div class="ms-2 mt-2 border border-primary rounded-3" style="width: 175px; height: 100px;">rounded-3</div><!-- more rounded -->
+
+    <div class="ms-2 mt-2 border border-primary rounded-pill text-center" style="width: 175px; height: 100px;"><p class="mt-4">rounded-pill</p></div><!-- pill rounded -->
+
+    <div class="ms-2 mt-2 border border-primary text-center" style="width: 175px; height: 100px;"><p class="mx-auto my-4">Lorem <span class="bg-warning text-white border border-danger rounded-pill">ipsum</span> dolor sit amet.</p></div><!-- pill rounded -->
+
+  </div>
+  <br>
+
+  <!-- Border Utilities -->
+  <div class="container">
+    <div class="ms-2 mt-2 border border-primary">data1</div>
+    <div class="ms-2 mt-2 border border-primary border-1">data1</div>
+    <div class="ms-2 mt-2 border border-primary border-2">data2</div>
+    <div class="ms-2 mt-2 border border-primary border-3">data3</div>
+    <div class="ms-2 mt-2 border border-primary border-4">data4</div>
+    <div class="ms-2 mt-2 border border-primary border-5">data5</div>
+    <div class="ms-2 mt-2 border border-primary border-2" style="width:100px">data2</div>
+  </div>
+  
+  <br>
+
+  <div class="border border-danger border-end-0" style="width: 100px;">test</div>
+
+  <br>
+
+  <!-- Border utilities Color -->
+  <div class="mt-2 ms-2 border border-primary border-start-0">
+    <p>Test paragraph</p>
+  </div>
+  <div class="mt-2 ms-2 border border-success border-top-0">
+    <p>Test paragraph</p>
+  </div>
+  <div class="mt-2 ms-2 border border-warning">
+    <p>Test paragraph</p>
+  </div>
+
+  <br>
+
+  <!-- Border Utilities Subtractive -->
+  <div class="w-25 mt-2 ms-2 border border-0">
+    <p>Remove border on all sides.</p><!-- no border -->
+  </div>
+  <div class="w-25 mt-2 ms-2 border border-top-0">
+    <p>Remove border on top sides only.</p>
+  </div>
+  <div class="w-25 mt-2 ms-2 border border-end-0">
+    <p>Remove border on right sides only.</p>
+  </div>
+  <div class="w-25 mt-2 ms-2 border border-bottom-0">
+    <p>Remove border on bottom sides only.</p>
+  </div>
+  <div class="w-25 mt-2 ms-2 border border-start-0">
+    <p>Remove border on left sides only.</p>
+  </div>
+
+  <!-- available on textarea -->
+  <textarea name="" id="" cols="10" rows="3" class="border-top-0"></textarea>
+
+
+  <br>
+
+  <!-- Border Utilities Additive -->
+  <div class="w-25 mt-2 ms-2 border">
+    <p>Border on all sides.</p>
+  </div>
+  <div class="w-25 mt-2 ms-2 border-top">
+    <p>Border on top only.</p>
+  </div>
+  <div class="w-25 mt-2 ms-2 border-end">
+    <p>Border on right only.</p>
+  </div>
+  <div class="w-25 mt-2 ms-2 border-bottom">
+    <p>Border on bottom only.</p>
+  </div>
+  <div class="w-25 mt-2 ms-2 border-start">
+    <p>Border on left only.</p>
+  </div>
+
+  <hr>
+
+  <!-- Width. it needs parent container width -->
+  <div class="border mt-2 ms-2" style="width: 800px;">
+    <div class="w-25 bg-success">Width is 25% of 800px</div>
+    <div class="w-50 bg-secondary">Width is 50% of 800px</div>
+    <div class="w-75 bg-warning">Width is 75% of 800px</div>
+    <div class="w-100 bg-danger">Width is 100% of 800px</div>
+    <div class="w-auto bg-info">Width is auto</div>
+  </div>
+
+  <hr>
+
+  <!-- Height. it needs parent container height -->
+  <div class="border mt-2 ms-2" style="height: 100px; width: 400px;">
+    <div class="h-25 bg-success">Height is 25% of 100px</div>
+    <div class="h-50 bg-secondary">Height is 50% of 100px</div>
+    <div class="h-75 bg-warning">Height is 75% of 100px</div>
+    <div class="h-100 bg-danger">Height is 100% of 100px</div>
+    <div class="h-auto bg-info">Height is auto</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
